@@ -8,8 +8,8 @@
 </head>
 <body>
     <ul>
-        <?php foreach ($person as $feature): ?>
-            <li><?= $feature; ?></li>
+        <?php foreach ($person as $key => $feature): ?>
+            <li><strong><?= $key ?> </strong><?= $feature; ?></li>
         <?php endforeach; ?>
     </ul>
 </body>
