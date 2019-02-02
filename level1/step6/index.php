@@ -8,9 +8,5 @@ $names  = [
     'Mary'
 ];
 
-foreach ($names as $name)
-{
-    echo $name;
-}
-
 require 'index.view.php';
+
