@@ -7,10 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Task For The Day</h1>
+    <?= ucwords('hello my name is jeffrey') ?>
     <ul>
-        <?php foreach ($person as $key => $feature): ?>
-            <li><strong><?= $key ?> </strong><?= $feature; ?></li>
-        <?php endforeach; ?>
+    <?php foreach ($task as $heading => $value): ?>
+        <li>
+            <strong><?= ucwords($heading) ?></strong> <?= $value ?>
+        </li>
+    <?php endforeach ?>    
     </ul>
 </body>
 </html>
