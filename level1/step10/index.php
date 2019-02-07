@@ -1,11 +1,8 @@
 <?php
-$animals = ['dog', 'cat'];
+require 'functions.php';
 
-function dd($data)  {
-    echo '<pre>';
-    die(var_dump($data));
-    echo '</pre>';
-}
+
+$animals = ['dog', 'cat'];
 
 dd('hello world');
 
