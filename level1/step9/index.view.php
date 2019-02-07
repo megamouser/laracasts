@@ -20,12 +20,8 @@
         <span><?= $task['assigned_to']; ?></span>
     </li>    
     <li>
-        <strong>status: </strong>
-        <?php if($task['completed']):?>
-        <span><?= 'completed' ?></span>
-        <?php else: ?>
-        <span><?= 'in process' ?></span>
-        <?php endif ?>
+        <strong>status:</strong>
+        <?= $task['completed'] ? 'Finished' : 'Incomplete' ?>
     </li>    
 </body>
 </html>
