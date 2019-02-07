@@ -1,6 +1,14 @@
 <?php
 $animals = ['dog', 'cat'];
-die(var_dump($animals));
+
+function dd($animals)  {
+    echo '<pre>';
+    die(var_dump($animals));
+    echo '</pre>';
+}
+
+dd($animals);
+
 require 'index.view.php';
 
 
