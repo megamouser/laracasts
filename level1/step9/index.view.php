@@ -21,14 +21,11 @@
     </li>    
     <li>
         <strong>status:</strong>
-        <?php
-            if($task['completed']) {
-                echo 'Finished &#10003;';
-            } else {
-                echo 'Incomplete &#10005;';
-            }
-        
-        ?>
+        <?php if($task['completed']): ?>
+            <?= 'Finished &#9989;'; ?>
+        <?php else: ?>
+            <?= 'Incomplete &#9989;'; ?>
+        <?php endif ?>
     </li>    
 </body>
 </html>
