@@ -2,7 +2,7 @@
 require 'functions.php';
 class Task {
     public $description;
-    protected $completed = false;
+    public $completed = false;
 
     public function __construct($description) 
     {
@@ -18,6 +18,11 @@ class Task {
     {
         return $this->completed;
     }
+
+    public function description() 
+    {
+        return $this->description();
+    }
 }
 
 $tasks = [
@@ -26,6 +31,7 @@ $tasks = [
     new Task('Clean my room')
 ];
 
+$tasks[0]->complete();
 //dd($tasks);
 
 require 'index.view.php';
