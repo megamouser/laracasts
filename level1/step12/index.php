@@ -1,7 +1,7 @@
 <?php
 require 'functions.php';
 class Task {
-    protected $description;
+    public $description;
     protected $completed = false;
 
     public function __construct($description) 
@@ -20,9 +20,12 @@ class Task {
     }
 }
 
-$task = new Task('Go to the store');
-$task->complete(); // complete the task
+$tasks = [
+    new Task('Go to the store'),
+    new Task('Finish my screencast'),
+    new Task('Clean my room')
+];
 
-dd($task->isComplete());
+//dd($tasks);
 
 require 'index.view.php';
