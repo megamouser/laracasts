@@ -8,7 +8,8 @@ try {
 $statement = $pdo->prepare('select * from todos');
 $statement->execute();  
 
-var_dump($statement->fetchAll());
+$results = ($statement->fetchAll(PDO::FETCH_OBJ));
+var_dump($results[0]->description);
 
 
 
