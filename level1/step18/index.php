@@ -57,4 +57,12 @@ $modified = array_map(function($post) {
 */
 
 // $titles = array_column($posts, 'title');
-var_dump($titles);
+
+/*
+$titles = array_map(function($post) {
+    return $post->title;
+}, $posts);
+*/
+
+$titles = array_column($posts, 'title');
+print_r($titles);
