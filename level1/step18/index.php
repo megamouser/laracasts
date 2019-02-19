@@ -38,4 +38,23 @@ $modified = array_map(function($post) {
 }, $posts);
 */
 
-var_dump($posts);
+/*
+$modified = array_map(function($post) {
+    return (array) $post;
+}, $posts);
+*/
+
+/*
+$modified = array_map(function($post) {
+    return ['title' => $post->title];
+}, $posts);
+*/
+
+/*
+$modified = array_map(function($post) {
+    return $post->title;
+}, $posts);
+*/
+
+// $titles = array_column($posts, 'title');
+var_dump($titles);
