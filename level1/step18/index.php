@@ -64,5 +64,8 @@ $titles = array_map(function($post) {
 }, $posts);
 */
 
-$titles = array_column($posts, 'title');
-print_r($titles);
+$posts = array_map(function($post) {
+    return (array) $post;
+}, $posts);
+
+var_dump($posts);
