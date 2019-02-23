@@ -17,15 +17,35 @@ class QueryBuilder
     }
 
     public function insert($table, $parameters)
-    {
+    {   
+        var_dump($table);
+        var_dump($parameters);
+        var_dump(array_keys($parameters));
+        var_dump(implode(', ', array_keys($parameters)));
+        var_dump(':' . implode(', :', array_keys($parameters)));
+        
         $sql = sprintf(
             'insert into %s (%s) values (%s)',
-            'one', 'two', 'three'
+            $table, implode(', ', array_keys($parameters)), 
+            ':' . implode(', :', array_keys($parameters))
         );
 
         die(var_dump($sql));
-        // insert into names (name, email) values (:name, :email)
-        // $statement->execute(['name' => 'Joe', 'email' => 'joe@example.com']);
+
+        //print_r($parameters);
+        //print_r(implode(array_keys($parameters)));
+
+        // $sql = sprintf(
+        //     'insert into %s (%s) values (%s)',
+        //     $table,
+        //     implode(array_keys($parameters)),
+        //     ':' . implode(', :', array_keys($parameters))
+        // );
+
+        // print_r($sql);
+
+        //$statement = $this->pdo->prepare($sql);
+        //print_r($statement);
     }
 }
 
