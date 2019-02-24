@@ -38,7 +38,7 @@ class QueryBuilder
             die('Woops, something went wrong');
         }
 
-        die(var_dump($sql));
+        //die(var_dump($sql));
 
         //print_r($parameters);
         //print_r(implode(array_keys($parameters)));
