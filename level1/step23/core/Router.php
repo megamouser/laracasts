@@ -39,11 +39,13 @@ class Router
 
     protected function callAction($controller, $action)
     {   
+        $controller = new $controller;
         if(! method_exists($controller, $action)) {
             throw new Exception(
                 "{$controller} does not respond the {$action} action"
             );
         }
-        return (new $controller)->$action();
+
+        return $controller->$action();
     }
 }
