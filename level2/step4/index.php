@@ -1,50 +1,15 @@
 <?php
-abstract class Shape
+abstract class Mailer 
 {
-    protected $color;
-
-    public function __construct($color = 'red')
+    public function send($to, $from, $body)
     {
-        $this->color = $color;
-    }
-
-    public function getColor()
-    {
-        return $this->color;
-    }
-
-    abstract protected function getArea();
-}
-
-class Square extends Shape
-{
-    protected $length = 4;
-
-    public function getArea()
-    {
-        return pow($this->length, 2);
     }
 }
 
-class Triangle extends Shape
+class UserMailer extends Mailer 
 {
-    protected $base = 4;
-    protected $height = 7;
-
-    public function getArea()
+    public function sendWelcomeEmail(User $user)
     {
-        return .5 * $this->base * $this->height;
+        return $this->send($user->email);
     }
 }
-
-class Circle extends Shape
-{
-    protected $radius = 5;
-
-    public function getArea()
-    {
-        return M_PI * pow($this->radius, 2);
-    }
-}
-
-echo (new Circle)->getArea();
