@@ -1,4 +1,5 @@
 <?php
+namespace Acme;
 class Business
 {
     protected $staff;
@@ -18,4 +19,6 @@ class Business
     {
         return $this->staff->members();
     }
+   
+    
 }
