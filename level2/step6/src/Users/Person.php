@@ -1,5 +1,5 @@
 <?php
-namespace Acme;
+namespace Acme\Users;
 class Person
 {
     protected $name;
