@@ -1,0 +1,15 @@
+{
+    "name": "art/step6",
+    "authors": [
+        {
+            "name": "Artem Yurev",
+            "email": "artemon-yrev@yandex.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "src"
+        }
+    }
+}
