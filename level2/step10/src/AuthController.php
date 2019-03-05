@@ -1,6 +1,6 @@
 <?php
 namespace Acme;
-class AuthController
+class AuthController implements RespondsToUserRegistration
 {
     protected $registration;
 
