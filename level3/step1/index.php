@@ -26,8 +26,7 @@ class OilChange implements CarService {
     }
 }
 
-echo (new BasicInspection())->getCost();
-
+echo (new OilChange(new BasicInspection()))->getCost();
 
 
 
