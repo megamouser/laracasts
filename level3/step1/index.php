@@ -1,20 +1,37 @@
 <?php
-interface CarService 
-{
-    public function getCost();
-    public function getDescription();
-}
+//interface CarService
+//{
+//    public function getCost();
+//    public function getDescription();
+//}
 
-class BasicInspection implements CarService
+class CarService
 {
+    protected $cost;
+
     public function getCost()
     {
-        return 25;
+        return $this->cost;
+    }
+
+    public function setCost()
+    {
+        $this->cost = $cost;
     }
 
     public function getDescription()
     {
         return 'Basic Inspection';
+    }
+
+    public function withOilChange()
+    {
+        $this->cost += 29;
+    }
+
+    public function withTireRotation()
+    {
+        return $this->cost += 15;
     }
 }
 
