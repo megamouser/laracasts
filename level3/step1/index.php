@@ -13,21 +13,35 @@ class BasicInspection implements CarService
 }
 
 class OilChange implements CarService {
-    protected $catService;
+    protected $carService;
 
     public function __construct(CarService $carService)
     {
-        $this->catService = $carService;
+        $this->carService = $carService;
     }
 
     public function getCost()
     {
-        return 29 + $this->catService->getCost();
+        return 29 + $this->carService->getCost();
     }
 }
 
-echo (new OilChange(new BasicInspection()))->getCost();
+class TireRotation implements CarService
+{
+    protected $carService;
 
+    public function __construct(CarService $carService)
+    {
+        $this->carService = $carService;
+    }
+
+    public function getCost()
+    {
+        return 15 + $this->carService->getCost();
+    }
+}
+
+echo (new TireRotation(new OilChange(new BasicInspection())))->getCost( );
 
 
 
