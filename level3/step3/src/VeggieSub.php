@@ -7,11 +7,11 @@ class VeggieSub extends Sub
         return $this
                 ->layBread()
                 ->addLettuce()
-                ->addVeggies()
+                ->addPrimaryToppings()
                 ->addSauces();
     }
 
-    public function addVeggies()
+    public function addPrimaryToppings()
     {
         var_dump('add: veggies');
         return $this;

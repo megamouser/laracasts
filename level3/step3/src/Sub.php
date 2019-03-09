@@ -3,14 +3,14 @@ namespace App;
 abstract class Sub
 {
 
-//    protected function make()
-//    {
-//        return $this
-//            ->layBread()
-//            ->addLettuce()
-//            ->addPrimaryToppings()
-//            ->addSauces();
-//    }
+    protected function make()
+    {
+        return $this
+            ->layBread()
+            ->addLettuce()
+            ->addPrimaryToppings()
+            ->addSauces();
+    }
 
     protected function layBread()
     {
@@ -30,5 +30,5 @@ abstract class Sub
         return $this;
     }
 
-//    protected abstract function addPrimaryToppings();
+    protected abstract function addPrimaryToppings();
 }
