@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Customer' => $baseDir . '/src/Customer.php',
     'CustomerIsGold' => $baseDir . '/src/CustomerIsGold.php',
+    'CustomersRepository' => $baseDir . '/src/CustomersRepository.php',
     'Help' => $vendorDir . '/phpunit/phpunit/src/Util/Help.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',

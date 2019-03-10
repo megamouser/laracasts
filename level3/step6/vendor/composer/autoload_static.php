@@ -69,6 +69,7 @@ class ComposerStaticInit4ee839be70af5479cf4a453c31d9d90e
     public static $classMap = array (
         'Customer' => __DIR__ . '/../..' . '/src/Customer.php',
         'CustomerIsGold' => __DIR__ . '/../..' . '/src/CustomerIsGold.php',
+        'CustomersRepository' => __DIR__ . '/../..' . '/src/CustomersRepository.php',
         'Help' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Help.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
