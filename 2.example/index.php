@@ -21,7 +21,10 @@ if(empty($_SESSION['user']))
         <?= 'Your permissions level: ' . $_SESSION['user']['permissions'] ?>
     </div>  
     <div>
-        <a href="logout.php">logout</a>
+        <ul>
+            <li><a href="userlist.php">userlist</a></li>
+            <li><a href="logout.php">logout</a></li>
+        </ul>
     </div>
 </body>
 </html>
