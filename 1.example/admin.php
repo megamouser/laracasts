@@ -6,4 +6,3 @@ if(!empty($_SESSION['is_admin']))
 } else {
     echo 'you are guest';
 }
-echo session_save_path();
