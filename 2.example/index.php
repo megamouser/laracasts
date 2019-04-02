@@ -11,14 +11,15 @@ if(empty($_SESSION['user']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>account</title>
 </head>
 <body>
+    <h1>Account:</h1>
     <div>
-        <?= 'You are logged in like: ' . $_SESSION['user']['login']; ?>
+        <?= 'login: ' . $_SESSION['user']['login']; ?>
     </div>
     <div>
-        <?= 'Your permissions level: ' . $_SESSION['user']['permissions'] ?>
+        <?= 'role: ' . $_SESSION['user']['permissions'] ?>
     </div>  
     <div>
         <ul>

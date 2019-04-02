@@ -31,6 +31,7 @@
     <title>login</title>
 </head>
 <body>
+    <h1>loging in:</h1>
     <ul>
         <?php foreach ($errors as $error): ?>
             <li><?= $error ?></li>

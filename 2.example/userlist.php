@@ -28,6 +28,7 @@ $users = require_once 'users.php';
         die('you dont have permisssions to look this page');
     }
     ?>
+    <h1>Users list:</h1>
     <table>
         <tr>
             <th>login</th>
